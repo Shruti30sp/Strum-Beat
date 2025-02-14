@@ -29,10 +29,8 @@ body {
   color: var(--dark-brown-color);
 }
 .navbar .logo {
-  width: 150px; /* Adjust as needed */
-  height: auto; /* Keeps aspect ratio */
-  max-height: 80px; /* Ensures it doesn't exceed navbar height */
-  object-fit: contain; /* Keeps it within bounds */
+  width: 120px;
+  height: 80px;
 }
 
 .navbar {
@@ -69,7 +67,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(228, 219, 219);
+  color: black;
   animation: bounce 0.4s ease-in-out;
 }
 

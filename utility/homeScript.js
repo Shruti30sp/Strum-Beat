@@ -91,3 +91,21 @@ function reveal() {
     }
   }
 }
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", checkCards);
+checkCards(); // Run once on page load
+
+function checkCards() {
+  const triggerBottom = window.innerHeight * 0.8; // Adjusted trigger point
+
+  cards.forEach((card) => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if (cardTop < triggerBottom) {
+      card.classList.add("show");
+    } else {
+      card.classList.remove("show");
+    }
+  });
+}
